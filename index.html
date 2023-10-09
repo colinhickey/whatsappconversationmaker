@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Conversation Maker</title>
+  <script src="main.js"></script>
+  <script src="dom-to-image.js"></script>
+  <script src="FileSaver.js"></script>
+  <link rel="stylesheet" href="main.css">
+  <link rel="stylesheet" href="devices.min.css" type="text/css">
+</head>
+
+<body>
+
+  <!-- BACKGROUND-->
+  <div class="page">
+    <!-- phone -->
+
+    <div class="marvel-device iphone-x ">
+      <div class="notch">
+        <div class="camera"></div>
+        <div class="speaker"></div>
+      </div>
+      <div class="top-bar"></div>
+      <div class="sleep"></div>
+      <div class="bottom-bar"></div>
+      <div class="volume"></div>
+      <div class="overflow">
+        <div class="shadow shadow--tr"></div>
+        <div class="shadow shadow--tl"></div>
+        <div class="shadow shadow--br"></div>
+        <div class="shadow shadow--bl"></div>
+      </div>
+      <div class="inner-shadow"></div>
+      <div class="screen">
+        <!-- whatsapp page -->
+        <!-- status bar -->
+        <div class="status-bar">
+          <div class="phone-time">12:11</div>
+          <div class="right">
+            <div><img src="./images/ios15-cellular-signal-icon.png" alt=""></div>
+            <div><img src="./images/ios15-wifi-icon.png" alt=""></div>
+            <div><img src="./images/ios15-battery-status-icon.png" alt=""></div>
+          </div>
+        </div>
+        <div class="user-bar">
+
+          <div class="user">
+            <img class="avatar" src="./images/zuck.png">
+            <div class="user-text">
+              <div class="name">Zuckerberg, M.</div>
+              <div class="status">online</div>
+            </div>
+          </div>
+
+          <div class="call-buttons">
+            <div><img class="video" src="./images/video.png" alt=""></div>
+            <div><img class="voice" src="./images/voice.png" alt=""></div>
+          </div>
+        </div>
+        <!-- message window -->
+        <div class="message-window">
+            <div class="message-area" id="message-area">
+              
+            </div>
+
+          <!-- CONTROLS AREA -->
+          <div class="controls-area">
+            <div class="toolbar">
+              <form>
+                <label>Sender:</label>
+                <label for="them">Them</label>
+                <input type="radio" name="sender" id="from" value="Them" checked="true">
+                <label for="me">Me</label>
+                <input type="radio" name="sender" id="to" value="Me">
+              </form>
+              <div>
+                <button class="tool" id="clear" onclick="chatClear()"><img src="./images/mop.png"></button>
+                <button class="tool" id="download" onclick="chatDownload()"><img src="./images/download.png"></button>
+              </div>
+            </div>
+            <div class="editor">
+              <input class="input-field" type="text" id="inputText" name="inputText">
+              <button class="tool" id="send" onclick="addMessage()"><img src="./images/send.png"></button>
+            </div>
+          </div>
+        </div>
+        <!-- controls: clear, download image -->
+      </div>
+    </div>
+
+  </div>
+</body>
+
+</html>
