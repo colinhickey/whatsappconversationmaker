@@ -115,9 +115,11 @@ body {
   display: flex;
   flex-direction: column;
   padding-bottom: 10px;
+  overflow: scroll;
 }
 
 .from {
+  min-width: 80px;
   max-width: 70%;
   border-radius: 15px;
   background-color: #ffffff;
@@ -164,7 +166,7 @@ body {
   content: '';
   position: relative;
   bottom: 15px;
-  right: -273px;
+  left: calc(100% + 9px);
   border: 0px solid;
   display: block;
   width: 18px;
