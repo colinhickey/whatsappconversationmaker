@@ -26,7 +26,7 @@ function chatDownload () {
     
     domtoimage.toBlob(document.getElementById('message-area'))
     .then(function (blob) {
-        window.saveAs(blob, 'my-node.png');
+        window.saveAs(blob, 'chat.png');
     });
 
 }
