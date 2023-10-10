@@ -6,3 +6,7 @@ It allows you to create a back and forth conversation in a whatsapp looking UI. 
 This was the first version, just a quick weekend idea.
 
 Uses dom-to-image for the image download function.
+
+Working example available on github pages here:
+https://colinhickey.github.io/whatsappconversationmaker/
+
