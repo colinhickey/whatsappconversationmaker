@@ -60,34 +60,39 @@
             <div><img class="voice" src="./images/voice.png" alt=""></div>
           </div>
         </div>
+
         <!-- message window -->
         <div class="message-window">
+          <div class="scroller">
             <div class="message-area" id="message-area">
               <!-- USER MESSAGES WILL BE ADDED HERE -->
-            </div>
+              
 
-          <!-- CONTROLS AREA -->
-          <div class="controls-area">
-            <div class="toolbar">
-              <form>
-                <label>Sender:</label>
-                <label for="them">Them</label>
-                <input type="radio" name="sender" id="from" value="Them" checked="true">
-                <label for="me">Me</label>
-                <input type="radio" name="sender" id="to" value="Me">
-              </form>
-              <div>
-                <button class="tool" id="clear" onclick="chatClear()"><img src="./images/mop.png"></button>
-                <button class="tool" id="download" onclick="chatDownload()"><img src="./images/download.png"></button>
-              </div>
-            </div>
-            <div class="editor">
-              <input class="input-field" type="text" id="inputText" name="inputText">
-              <button class="tool" id="send" onclick="addMessage()"><img src="./images/send.png"></button>
+              <!-- END -->
             </div>
           </div>
         </div>
-        <!-- controls: clear, download image -->
+
+        <!-- CONTROLS AREA -->
+        <div class="controls-area">
+          <div class="toolbar">
+            <form>
+              <label>Sender:</label>
+              <label for="them">Them</label>
+              <input type="radio" name="sender" id="from" value="Them" checked="true">
+              <label for="me">Me</label>
+              <input type="radio" name="sender" id="to" value="Me">
+            </form>
+            <div>
+              <button class="tool" id="clear" onclick="chatClear()"><img src="./images/mop.png"></button>
+              <button class="tool" id="download" onclick="chatDownload()"><img src="./images/download.png"></button>
+            </div>
+          </div>
+          <div class="editor">
+            <input class="input-field" type="text" id="inputText" name="inputText">
+            <button class="tool" id="send" onclick="addMessage()"><img src="./images/send.png"></button>
+          </div>
+        </div>
       </div>
     </div>
 
