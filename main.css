@@ -196,7 +196,7 @@ body {
 .controls-area {
   width: 100%;
   background-color: white;
-  position: absolute;
+  position: fixed;
   bottom: 0;
 }
 
