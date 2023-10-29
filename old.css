@@ -103,7 +103,7 @@ body {
 .message-window {
   background-image: url('./images/wallpaper.png');
   background-size: cover;
-  height: 100vh;
+  height: 100%;
   width: 100%;
 }
 
